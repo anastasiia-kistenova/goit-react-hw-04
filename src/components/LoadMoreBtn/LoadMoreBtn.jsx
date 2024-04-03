@@ -1,11 +1,20 @@
 import React from 'react';
+import styles from './LoadMoreBtn.module.css';
 
-function LoadMoreBtn({ onClick }) {
-   return (
-      <div style={{ textAlign: 'center', marginTop: '20px' }}>
-         <button onClick={onClick}>Load more</button>
-      </div>
-   );
-}
+
+const LoadMoreBtn = ({ onClick }) => {
+  const handleClick = (e) => {
+    e.preventDefault();
+    onClick(e);
+  };
+
+
+  return (
+    <button className={styles.buttonMore} onClick={handleClick}>
+      Load more
+    </button>
+  );
+};
+
 
 export default LoadMoreBtn;

@@ -1,9 +1,11 @@
 .searchBarContainer {
-    background-color: rgb(102, 187, 233);
+    background-color: #7ebaee;
+        
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 
@@ -12,6 +14,8 @@
     padding: 5px;
     border: none;
     border-radius: 5px;
+    padding-left: 40px;
+   
 }
 
 
@@ -20,10 +24,10 @@
 }
 
 
-button {
+.btnSearch {
     padding: 5px 10px;
-    background-color: #056357;
-    color: white;
+    background-color: #d4d433;
+    color: rgb(7, 7, 7);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -31,6 +35,21 @@ button {
 }
 
 
-button:hover {
+.btnSearch:hover {
     background-color: #52b757;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.searchIcon {
+    position: absolute;
+    top: 50%;
+    right: 950px;
+    transform: translateY(-50%);
+    color: #aaa;
+    cursor: pointer;
+    width: 15px;
 }

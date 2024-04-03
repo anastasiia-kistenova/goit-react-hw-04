@@ -1,0 +1,19 @@
+.buttonMore {
+    padding: 5px 10px;
+    background-color: #599ee2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+
+  
+    
+}
+
+
+.buttonMore:hover {
+    background-color: #52b757;
+}
